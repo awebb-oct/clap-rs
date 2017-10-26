@@ -548,6 +548,9 @@ extern crate textwrap;
 #[cfg(feature = "color")]
 extern crate atty;
 
+#[cfg(feature = "wrap_help")]
+extern crate term_size;
+
 #[cfg(feature = "yaml")]
 pub use yaml_rust::YamlLoader;
 pub use args::{Arg, ArgGroup, ArgMatches, ArgSettings, SubCommand, Values, OsValues};
